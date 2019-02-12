@@ -1,0 +1,17 @@
+<div id="modal-default" data-izimodal-title="{{ modalTitle }}">
+    <p>{{ modalDescription }}</p>
+</div>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+<script type="text/javascript">
+    $("#modal-default").iziModal({
+        autoOpen: true,
+        headerColor: "#26A69A",
+        width: 400,
+        overlayColor: "rgba(0, 0, 0, 0.5)",
+        fullscreen: true,
+        transitionIn: "fadeInUp",
+        transitionOut: "fadeOutDown"
+    });
+</script>
+

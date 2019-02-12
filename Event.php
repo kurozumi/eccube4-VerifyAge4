@@ -50,6 +50,8 @@ class Event implements EventSubscriberInterface
                 $templateEvent->addAsset('@VerifyAge4/default/asset.twig');
                 $templateEvent->addSnippet('@VerifyAge4/default/snippet.twig');
                 
+                // snippet.twigに値を渡す
+                // 文言を動的に操作したい場合はこのへんで調整してください
                 $templateEvent->setParameter('modalTitle', "年齢確認");
                 $templateEvent->setParameter('modalDescription', "20歳以上ですか？");
             });
